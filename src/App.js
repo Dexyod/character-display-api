@@ -16,7 +16,7 @@ const App = () => {
     const fetchItems = async () => {
       const result = await axios(
         //add query onto end of API url so we can search data
-        `https://www.breakingbadapi.com/api/characters?name=${query}`
+        `https://api.pandascore.co/dota2/heroes?token=Xd8blbSaY_xZ8DgDIW4UWDiRh6OA9Ww82OGvYL34pL3027RhCwY&page[]`
       );
 
       console.log(result.data);
