@@ -16,10 +16,10 @@ const App = () => {
     const fetchItems = async () => {
       const result = await axios(
         //add query onto end of API url so we can search data
-        `https://api.pandascore.co/dota2/heroes?token=Xd8blbSaY_xZ8DgDIW4UWDiRh6OA9Ww82OGvYL34pL3027RhCwY&page[]`
+        `https://api.pandascore.co/dota2/heroes?token=Xd8blbSaY_xZ8DgDIW4UWDiRh6OA9Ww82OGvYL34pL3027RhCwY&per_page=200&sort=name`
       );
 
-      console.log(result.data);
+      // console.log(result.data);
       //set items to the data and loading is complete so set to false
       setItems(result.data);
       setIsLoading(false);
